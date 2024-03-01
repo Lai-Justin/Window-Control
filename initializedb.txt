@@ -1,0 +1,2 @@
+INSERT INTO weather (city, temp, prcp, wind, date)
+ VALUES ('San Francisco', 43, 57, 0.0, '1994-11-29');

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Display</title>
+  <style>
+    /* Sets the table margin to 0 and keeps the gaps between the tables equal */
+    .data-table {
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+    .data-table th,
+    /* Adds a padding to all sides of the table cell and adds a border with all the data centered in the cell */
+    .data-table td {
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    /* Changes the color of the headers on the website */
+    .data-table th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <h1>Data Display</h1>
+  <!-- Creates a table with columns Date, Outdoor Temp, Indoor Temp, Window Open -->
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Outdoor Temp (°F)</th>
+        <th>Indoor Temp (°F)</th>
+        <th>Window Open (%)</th>
+      </tr>
+    </thead>
+    <!-- Fills the table with the values from the temperature_log_api.csv -->
+    <tbody>
+      {% for row in data.iterrows() %}
+        <tr>
+          <td>{{ row[1]['date'] }}</td>
+          <td>{{ row[1]['outdoor_temp'] }}</td>
+          <td>{{ row[1]['indoor_temp'] }}</td>
+          <td>{{ row[1]['window_percent'] }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+</html>

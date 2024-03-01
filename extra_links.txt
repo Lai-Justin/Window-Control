@@ -1,0 +1,11 @@
+1) https://dev.to/admantium/gpio-programming-on-the-raspberry-pi-python-libraries-4e5m#:~:text=The%20RPI.,page%20is%20hosted%20on%20Scourceforge
+(Notes: Most likely using Gpiozero library)
+
+2) https://gpiozero.readthedocs.io/en/stable/recipes.html
+(Notes: Ctrl+F temperature for sensor based stuff
+
+3) https://www.circuitbasics.com/raspberry-pi-ds18b20-temperature-sensor-tutorial/
+(Notes: Another link for more temperature based tutorials)
+
+4) https://ieeexplore.ieee.org/document/9112376
+(Notes: Research paper that uses temperature monitoring. Also uses a Raspberry Pi 3 / stores the data in a database)
