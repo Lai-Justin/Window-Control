@@ -3,7 +3,9 @@
 ## Code Setup
 ### Install All Dependencies
 pip install gpiozero
+
 pip install RPi.GPIO
+
 pip install jsonlines
 
 ### Temperature Sensor
