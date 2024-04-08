@@ -8,15 +8,22 @@ pip install jsonlines
 
 ### Temperature Sensor
 git clone https://github.com/adafruit/Adafruit_Python_DHT.git
+
 cd Adafruit_Python_DHT/
+
 sudo apt  install -y build-essential python3-dev 
+
 sudo python3 setup.py install
 
 ### To Run
 python3 main.py
+
 Pip3 install pandas
+
 Pip3 install flask
+
 To Run Web App
+
 Python3 app.py
 
 ## Problem Overview
